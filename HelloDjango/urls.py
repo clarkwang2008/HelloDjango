@@ -17,12 +17,12 @@ from django.contrib import admin
 from django.urls import path,re_path
 from django.conf.urls import url,include
 
-from blog import views
 
 urlpatterns = [
 #    path('admin/', admin.site.urls),
 #    path('index/', views.index, name='index'),
 
      re_path(r'^admin/', admin.site.urls),
-     re_path(r'^blog/', include('blog.urls', namespace="blog")),
+     re_path(r'^blog/', include('blog.urls',namespace='blog')),
+     re_path(r'^account/',include('account.urls',namespace='account')),
 ]
