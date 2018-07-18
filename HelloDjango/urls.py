@@ -24,4 +24,5 @@ urlpatterns = [
 
      re_path(r'^admin/', admin.site.urls),
      re_path(r'^blog/', include('blog.urls',namespace='blog')),
+     re_path(r'^account/',include('account.urls',namespace='account')),
 ]
