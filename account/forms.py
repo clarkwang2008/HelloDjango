@@ -9,7 +9,7 @@ class RegistrationForm(forms.ModelForm):
     password2 = forms.CharField(label="Confirm password", widget=forms.PasswordInput)
 class Meta:
     model = User
-    fields = ("username","email")
+    fields = ("username", "email")
 
 def clean_password2(self):
     cd = self.cleaned_data
