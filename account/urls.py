@@ -10,5 +10,6 @@ urlpatterns = [
     re_path(r'^login/$', auth_views.login, name="user_login"),
     re_path(r'^new-login/$', auth_views.login, {"template_name": "account/login.html"}),
     re_path(r'^logout/$', auth_views.logout, {"template_name": "account/logout.html"}),
+    re_path(r'^register/$', views.register, name="user_register"),
 
 ]
